@@ -1,0 +1,5 @@
+@media screen and (max-widht:1000px){
+    .navbar ul li a{
+        padding: 8px 0px;
+    }
+}
