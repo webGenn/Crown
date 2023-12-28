@@ -337,6 +337,7 @@ button:hover {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .box2 .social-icon{
     text-align: center;
@@ -348,6 +349,18 @@ button:hover {
 }
 .box2 .social-icon:hover{
     transform: rotateZ(360deg);
+}
+.box2 .d1{
+    flex-basis: 20%;
+}
+.box2 .d2{
+    flex-basis: 20%;
+}
+.box2 .d3{
+    flex-basis: 20%;
+}
+.box2 .d4{
+    flex-basis: 20%;
 }
 .box2 .detail p a{
     text-decoration: none;
