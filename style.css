@@ -1,0 +1,376 @@
+/*---------------------Removing Default Styles-------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*-------------------------------Navbar--------------------------*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav img{
+    width: 130px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+.navbar ul .active a{
+    background-color: red;
+    color: white;
+}
+.navbar ul li a:hover{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ------------------------------Hero Section------------------------------------ */
+
+.box1{
+    background-image: url(images/Hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box1 .left{
+    flex-basis: 60%;
+    text-transform: capitalize;
+}
+.box1 .left h1{
+    margin-top: 60px;
+    font-size: 50px;
+}
+.box1 .left a{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    color: white;
+    background-color: #033E3E;
+}
+.box1 .left .mouse{
+    width: 200px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.box1 .right{
+    flex-basis: 35%;
+    overflow: hidden;
+    box-shadow: 10px 8px 8px 3px #728FCE;
+}
+.box1 .right img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border-bottom-right-radius: 3px;
+}
+
+/* ------------------------------Services---------------------------------------- */
+
+.general_txt{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.card-hover{
+    transition: all 0.3s linear;
+}
+.card-hover:hover{
+    transform: scale(1.04);
+}
+
+/* ------------------------------------Footer---------------------------------------------- */
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+/* -----------------------------------Support Form------------------------------------- */
+
+.contact-form {
+    background-color: #faf7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    animation: slideIn 0.5s ease-in-out;
+    margin: auto;
+}
+.contact-form h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff0000;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+#sub-btn{
+    background-color: #033E3E;
+    color: white;
+}
+
+/* --------------------------------Contact Page--------------------------------------- */
+
+.contact-page_all{
+    background-image: url(images/contact\ bg\ 2.png);
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.contact-text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.box2 .social-icon{
+    text-align: center;
+    padding: 10px;
+    background-color: #3586ff;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+.box2 .social-icon:hover{
+    transform: rotateZ(360deg);
+}
+.box2 .detail p a{
+    text-decoration: none;
+    color: #033E3E;
+}
+.box3{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    min-height: 60vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.box3 .left{
+    flex-basis: 60%;
+}
+.box3 .right{
+    flex-basis: 33%;
+    overflow: hidden;
+}
+.box3 .right img{
+    height: 100%;
+    width: 100%;
+}
+.label-contact{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.contact-page-1{
+    margin-top: 60px;
+}
