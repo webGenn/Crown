@@ -46,6 +46,12 @@ nav img{
     color: white;
     border-radius: 5px;
 }
+nav .fa-bars{
+    display: none;
+}
+.navbar .fa-xmark{
+    display: none;
+}
 
 /* ------------------------------Hero Section------------------------------------ */
 
